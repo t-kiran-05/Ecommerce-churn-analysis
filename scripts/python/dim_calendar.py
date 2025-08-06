@@ -34,9 +34,9 @@ dim_calendar = pd.DataFrame({
     "is_holiday": [is_holiday(date) for date in date_range]  # Assign holidays
 })
 
-# Display the first few rows
+# Display the first few rows of the DataFrame
 print(dim_calendar.head())
 
-# Save to CSV (Optional)
+# Save to CSV 
 dim_calendar.to_csv("dim_calendar.csv", index=False)
 
